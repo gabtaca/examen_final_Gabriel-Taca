@@ -1,0 +1,151 @@
+.app_body {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  margin-bottom: 40px;
+  background-color: black;
+}
+
+.ctrl_h {
+  margin-left: 30px;
+}
+
+.ctrl_h h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: rgb(242, 242, 242);
+}
+
+.ctrl_h h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: gray;
+  justify-self: flex-end;
+}
+
+.ctrl_grid-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.create_grid-paterns {
+  display: flex;
+  flex-direction: row;
+  align-items: self-start;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  grid-template-rows: repeat(3, 60px);
+  gap: 10px;
+}
+
+.controls_create-patern {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.ctrl_create-patern {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.controls_create-patern button {
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn_delete-saved button {
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #0056b3;
+}
+
+.saved_patterns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Grille pour chaque patern sauvegardé */
+.grid_patern {
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  grid-template-rows: repeat(3, 40px);
+  gap: 5px;
+}
+
+/* Boutons de parterns sauvegardés. */
+.pattern-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.color-button {
+  border-radius: 50px;
+}
+
+.color-button.green {
+  background-color: green;
+}
+
+.color-button.yellow {
+  background-color: yellow;
+}
+
+.color-button.red {
+  background-color: red;
+}
+
+.color-button.blue {
+  background-color: blue;
+}
+
+/* Couleurs sauvegardés */
+.pattern-button.green {
+  background-color: green;
+}
+
+.pattern-button.yellow {
+  background-color: yellow;
+}
+
+.pattern-button.red {
+  background-color: red;
+}
+
+.pattern-button.blue {
+  background-color: blue;
+}
+
+button {
+  font-size: 1rem;
+}
